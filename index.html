@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title> Beyond Earth</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Earth++</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Beyond Earth</h2>
+            <h3>explore space</h3>
+            
+            <p>Lorem ipsum dolor sit amet, elit. Sed vehicula fermentum sapien at ullamcorper. Aliquam faucibus tempor mi, et sollicitudin tortor molestie id. Pellentesque tellus quam, finibus et mollis eu, porta vitae urna. </p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </div>
+
+    <script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+
+
+    
+</body>
+</html>
